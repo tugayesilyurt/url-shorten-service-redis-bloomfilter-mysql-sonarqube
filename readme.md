@@ -31,6 +31,11 @@ URL Shortening Services: Redis Integration with Bloom Filters in Spring Boot, My
 ## Using Bloom Filter
 
 ```java
+  @Service
+  @RequiredArgsConstructor
+  public class BloomFilterService {
+
+    private final RedissonClient redissonClient;
     private RBloomFilter<String> shortenBloomFilter;
 
     @Synchronized
@@ -50,7 +55,11 @@ URL Shortening Services: Redis Integration with Bloom Filters in Spring Boot, My
         return getShortenBloomFilter().contains(shortenURL);
     }
 
-
+    public void addData(String data){
+        getShortenBloomFilter().add(data);
+    }
+}
+```java
 
 
 
