@@ -38,12 +38,11 @@ When working with Redisson's Bloom Filter, you can use the `tryInit()` method to
 
 - falseProbability (type: double): Represents the desired false positive probability. Bloom Filters have a trade-off between memory usage and false positive rate. By specifying falseProbability, you indicate the acceptable rate at which false positives occur.
 
-```java
-stringRBloomFilter.tryInit(expectedInsertions, falseProbability);
-
 ## Using Bloom Filter
 
 ```java
+  stringRBloomFilter.tryInit(expectedInsertions, falseProbability);
+
   @Service
   @RequiredArgsConstructor
   public class BloomFilterService {
@@ -75,7 +74,6 @@ stringRBloomFilter.tryInit(expectedInsertions, falseProbability);
 
 ## Spring Boot Test Container
 
-```java
     static final MySQLContainer MY_SQL_CONTAINER;
 
     static {
@@ -104,7 +102,6 @@ stringRBloomFilter.tryInit(expectedInsertions, falseProbability);
 
 ## Spring Boot Test Controller
 
-```java
     @Test
     @DisplayName("integration test - create shorten url")
     public void givenLongURL_whenCreateShortenURL_thenReturnShortenURL() throws Exception {
