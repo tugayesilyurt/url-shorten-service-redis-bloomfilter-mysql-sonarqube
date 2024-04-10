@@ -34,10 +34,9 @@ When working with Redisson's Bloom Filter, you can use the `tryInit()` method to
 
 ### Method Signature
 
-Parameters
-expectedInsertions (type: long): Represents the expected number of insertions into the Bloom Filter. Adjusting this parameter allows you to allocate memory efficiently based on your anticipated workload.
+- expectedInsertions (type: long): Represents the expected number of insertions into the Bloom Filter. Adjusting this parameter allows you to allocate memory efficiently based on your anticipated workload.
 
-falseProbability (type: double): Represents the desired false positive probability. Bloom Filters have a trade-off between memory usage and false positive rate. By specifying falseProbability, you indicate the acceptable rate at which false positives occur.
+- falseProbability (type: double): Represents the desired false positive probability. Bloom Filters have a trade-off between memory usage and false positive rate. By specifying falseProbability, you indicate the acceptable rate at which false positives occur.
 
 ```java
 stringRBloomFilter.tryInit(expectedInsertions, falseProbability);
