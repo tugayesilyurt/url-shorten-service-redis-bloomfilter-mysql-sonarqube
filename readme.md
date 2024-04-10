@@ -71,9 +71,11 @@ When working with Redisson's Bloom Filter, you can use the `tryInit()` method to
         getShortenBloomFilter().add(data);
     }
 }
+```
 
 ## Spring Boot Test Container
 
+```java
     static final MySQLContainer MY_SQL_CONTAINER;
 
     static {
@@ -99,9 +101,11 @@ When working with Redisson's Bloom Filter, you can use the `tryInit()` method to
         registry.add("spring.datasource.username", MY_SQL_CONTAINER::getUsername);
         registry.add("spring.datasource.password", MY_SQL_CONTAINER::getPassword);
     }
+```
 
 ## Spring Boot Test Controller
 
+```java
     @Test
     @DisplayName("integration test - create shorten url")
     public void givenLongURL_whenCreateShortenURL_thenReturnShortenURL() throws Exception {
@@ -144,3 +148,4 @@ When working with Redisson's Bloom Filter, you can use the `tryInit()` method to
                 andExpect(status().isMovedPermanently());
 
     }
+```
