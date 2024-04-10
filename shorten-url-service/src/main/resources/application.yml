@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  shutdown: graceful
+
+spring:
+  application:
+    name: shorten-url
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://localhost:3306/shorten
+    username: tugay
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+redisson:
+  redisUrl: redis://localhost:6379

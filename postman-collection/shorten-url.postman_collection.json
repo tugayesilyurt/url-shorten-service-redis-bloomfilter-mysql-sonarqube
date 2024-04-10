@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "26ff44c7-73c8-4fc0-b60d-deacc29064de",
+		"name": "shorten-url",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8163916"
+	},
+	"item": [
+		{
+			"name": "Create Shorten URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"longUrl\": \"https://github.com/tugayesilyurt/coffee-store-api/blob/main/coffee-store-backend/src/main/resources/application-test.yml\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/shorten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Long URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/shorten?shortUrl=7eb0773",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"shorten"
+					],
+					"query": [
+						{
+							"key": "shortUrl",
+							"value": "7eb0773"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
