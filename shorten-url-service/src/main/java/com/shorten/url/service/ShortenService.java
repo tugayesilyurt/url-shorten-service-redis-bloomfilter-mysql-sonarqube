@@ -54,7 +54,6 @@ public class ShortenService {
             throw new RuntimeException("LongURL not exist!");
 
         return longURLFromDB.get().getLongUrl();
-
     }
 
     public String generateRandomString(int length) {

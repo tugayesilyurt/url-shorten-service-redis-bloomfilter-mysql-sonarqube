@@ -34,5 +34,4 @@ public class AbstractContainerBaseTest {
         registry.add("spring.datasource.username", MY_SQL_CONTAINER::getUsername);
         registry.add("spring.datasource.password", MY_SQL_CONTAINER::getPassword);
     }
-
 }

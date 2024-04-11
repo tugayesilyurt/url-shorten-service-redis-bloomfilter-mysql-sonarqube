@@ -2,6 +2,10 @@
 
 URL Shortening Services: Redis Integration with Bloom Filters in Spring Boot, MySQL, and SonarQube Analysis
 
+## Read this article on Medium
+
+[Medium Article](https://medium.com/@htyesilyurt/url-shortening-services-redis-integration-with-bloom-filters-in-spring-boot-mysql-and-sonarqube-b7d85cfc334c)
+
 ## System Diagram
 
 <img src="https://github.com/tugayesilyurt/url-shorten-service-redis-bloomfilter-mysql-sonarqube/blob/main/assets/systemdesign.png" width=70% height=70%>
